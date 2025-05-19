@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <script>
+    var pao,broa,Qtdpao,Qtdbroa
+    var soma,poupanca
+    pao = Number(prompt("Informe a quantidade de pães vendidos: "))
+    broa = Number(prompt("Informe a quantidade de broas vendidas: "))
+    Qtdpao = pao * 0.12
+    Qtdbroa = broa * 1.50
+    soma = Qtdpao + Qtdbroa
+    poupanca= soma * 0.1
+    
+    alert("Foram vendidos R$"+Qtdpao+" pães e R$" + Qtdbroa+ " de broa, o total arrecadado foi de R$"+ soma+","+
+        " e você deve guardar R$"+poupanca+" na sua conta poupança.")
+
+    </script>
+</body>
+</html>
