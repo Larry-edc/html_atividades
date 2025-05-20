@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>Calculo</h1>
+    <form>
+        <input type="number" placeholder="Digite um número" id="valor">
+    <br>
+        <select name="servico" id="selectValor1" >
+            <option value="0.05">Ruim(1 estrela)</option>
+            <option value="0.1">Aceitável(4 estrelas)</option>
+            <option value="0.2">Bom(5 estrelas)</option>
+        </select>
+       <button onclick="calcularValor()">Calcular</button>
+
+        <script>
+
+            function calcularValor(){
+            let valorConta = parseFloat(document.getElementById("valor").value)
+            let servico = parseFloat(document.getElementById("selectValor1").value)
+            
+            let gorjeta = valorConta + valorConta * servico
+            
+        }
+
+        </script>
+    <br>
+    <div>
+        
+    </div>
+        
+    <br>
+    </form>
+    </div>
+</body>
+</html>

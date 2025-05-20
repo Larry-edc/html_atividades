@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        checkbox-option{
+            color: #22fc1b;
+        }
+        div{
+        left: 40%;
+        top: 15%;
+        background-color: black;
+        opacity: 0.85;
+        position:absolute;
+        border-radius: 25px;
+        padding: 20px;
+}
+        input{
+        display: block;
+        margin: 0 auto;
+        margin-top: 20px;
+        padding: 13px;
+        width: 250px;
+        border-radius: 1px;
+        border: 1px solid #ccc;
+        color: black;
+        background: linear-gradient(to right, rgb(54, 39, 21), rgb(89, 202, 236));
+            
+        }
+        body{
+            background: linear-gradient(to right, #22fcdf, #22fcdf,#22fcdf, #22fca8, #22fc7f, #22fc4c, #22fc1b);
+            border: black;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Calculo</h1>
+    <form action="game.html">
+        <input type="number" placeholder="Digite um número" id="username">
+    <br>
+        <select name="servico" id="selectValor1" >
+            <option value="0.05">Ruim</option>
+            <option value="0.1">Aceitável</option>
+            <option value="0.2">Bom</option>
+        </select>
+       <button onclick="calcularValor">Calcular</button>
+        
+
+    <br>
+    <div>
+        
+    </div>
+        <input type="submit" value="Entrar" id="login-button">
+        <input type="reset" value="Apagar" id="reset-button">
+        
+    <br>
+    </form>
+    </div>
+</body>
+</html>
