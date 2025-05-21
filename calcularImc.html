@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular</title>
+    <script type="text/javascript">
+        const CalcularImc = () => {
+          const altura = document.calcular.elements["altura"].value;
+          const peso = document.calcular.elements["peso"].value;
+            
+          const imc = peso / (altura * altura);
+
+          if (imc < 18.5){
+            alert("Peso nível luiz")
+          }
+          else if (imc>18.5 && imc<24.9){
+            alert("Normal")
+          }
+          else if (imc>25 && imc<29.9){
+            alert("Larry")
+          }
+          else if (imc>30 && imc<39.9){
+            alert("Obesidade")
+          }
+          else{
+            alert("Davih")
+          }
+        }
+    </script>
+</head>
+<body>
+    <form id="calcular" name="calcular" action="#">
+        <label for="altura">Informe sua altura</label>
+        <input type="text" name="altura" id="altura">
+        <br>
+        <label for="peso">Informe seu peso</label>
+        <input type="text" id="peso" name="peso">
+        <br>
+        <input type="submit" value="Calcular" onclick="CalcularImc()">
+    </form>
+</body>
+</html>
