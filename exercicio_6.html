@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var salario,aumento,salarioBruto,desconto,salarioFinal
+        salario = Number(prompt("Informe seu salário: "))
+        aumento = salario * 0.15
+        salarioBruto = aumento + salario
+        desconto = salarioBruto * 0.08
+        salarioFinal = salarioBruto - desconto
+        
+        alert("Salário inicial: "+salario+
+            "\nAumento de 15%: "+salarioBruto+
+            "\nImposto: "+desconto+
+            "\nSalário final: "+salarioFinal
+        )
+    </script>
+</body>
+</html>
