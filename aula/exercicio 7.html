@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var lata,garrafa600,garrafaLitro,valor,calculo
+        lata = 350
+        garrafa600 = 600
+        garrafaLitro = 2000
+        
+        valor = Number(prompt("Quantas latas de Cola você comprou: "))
+        valor = Number(prompt("Quantas garrafas de 600ml de Cola você comprou: "))
+        valor = Number(prompt("Quantas garrafas de 2 litros de Cola você comprou: "))
+
+        calculo = (valor * lata) + (valor * garrafa600) + (valor * garrafaLitro)
+
+        alert("Você comprou " + (calculo / 1000) + " Litros de Meia-Cola")
+    </script>
+</body>
+</html>
